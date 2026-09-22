@@ -43,3 +43,4 @@ Co-founder & CTO, [upSosh](https://up-sosh.vercel.app). Ex-founder, Cracked.Soci
 Portfolio: [cinematicportfolio-neon.vercel.app](https://cinematicportfolio-neon.vercel.app/)
 
 Open to Applied AI Engineer roles and remote internships.
+[LinkedIn](https://linkedin.com/in/parrv-luthra-73372b322/) · [parrvcodes@gmail.com](mailto:parrvcodes@gmail.com)
