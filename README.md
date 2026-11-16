@@ -1,7 +1,7 @@
 # Parrv Luthra
 
 I build full-stack products end to end: React/Next.js and React Native frontends, Node/Express with Postgres or MongoDB backends, deployed with CI, plus AI features where they help.
-Co-Founder & CTO of [upSosh](https://up-sosh.vercel.app). Third-year B.Tech in AI at Newton School of Technology, Rishihood University, Delhi NCR.
+Co-Founder & CTO of [upSosh](https://upsosh.app). Third-year B.Tech in AI at Newton School of Technology, Rishihood University, Delhi NCR.
 
 ## Featured
 
@@ -13,7 +13,7 @@ Cross-platform (iOS, Android, Web) dating app that matches on music taste: a rar
 CreatorLyff: a MERN two-sided marketplace matching brands with creators, with brand/creator/admin dashboards, OAuth verification across 6 platforms, and Socket.IO chat.
 `MongoDB · Express · React/Next.js · Node · Socket.IO`
 
-**[upSosh](https://github.com/ParrvLuthra22/upSosh)** — [live](https://up-sosh.vercel.app)
+**[upSosh](https://github.com/ParrvLuthra22/upSosh)** — [live](https://upsosh.app)
 Micro-event booking platform with Razorpay checkout, QR tickets, integration tests in CI, and a real end-to-end payment test through Razorpay's test-mode checkout.
 `Next.js · Express · PostgreSQL · Prisma · Razorpay`
 
@@ -35,7 +35,7 @@ TypeScript, JavaScript, React, Next.js, React Native (Expo), Node.js, Express, M
 
 ## Elsewhere
 
-Co-founder & CTO, [upSosh](https://up-sosh.vercel.app). Ex-founder, Cracked.Social.
+Co-founder & CTO, [upSosh](https://upsosh.app). Ex-founder, Cracked.Social.
 Portfolio: [portfolio-parrv.vercel.app](https://portfolio-parrv.vercel.app)
 
 Open to full-stack and applied AI engineering roles and internships.
