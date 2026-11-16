@@ -26,7 +26,7 @@ Proactive macOS agent runtime: an LLM tool-calling planner, tiered permission ga
 `Python · FastAPI · MCP · Tauri · TypeScript`
 
 **[vantage](https://github.com/ParrvLuthra22/vantage)**
-Self-hosted tracing, cost-tracking and regression-eval backend for LLM agents. Its SDK is published on PyPI as `vantage-sdk`, and it gates vesper's PRs in CI.
+Self-hosted tracing, cost-tracking and regression-eval backend for LLM agents, with a non-blocking Python SDK. It gates vesper's PRs in CI.
 `Python · FastAPI · PostgreSQL · Alembic`
 
 ## Stack
