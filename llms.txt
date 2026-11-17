@@ -1,0 +1,84 @@
+# Parrv Luthra
+
+> Full-stack engineer (React/Next.js, React Native, Node/Express, Postgres/MongoDB) and applied-AI developer. Co-Founder & CTO of upSosh. Third-year B.Tech in AI at Newton School of Technology, Rishihood University (Delhi NCR). Open to full-stack and applied-AI engineering roles and internships.
+
+This file is a machine-readable profile for AI agents, crawlers, and assistants. Every claim here is drawn from Parrv's own public repositories and project documentation. Facts only — no invented metrics or awards.
+
+## Who
+
+- **Name:** Parrv Luthra
+- **Current role:** Co-Founder & CTO, [upSosh](https://upsosh.app)
+- **Previously:** Founder, Cracked.Social
+- **Education:** B.Tech in Artificial Intelligence (third year), Newton School of Technology, Rishihood University, Delhi NCR
+- **Focus:** Shipping full-stack products end to end — frontend, backend, CI, deployment — plus AI features and agent infrastructure where they add value
+- **Status:** Open to full-stack and applied-AI engineering roles and internships
+
+## Links
+
+- GitHub: https://github.com/ParrvLuthra22
+- Portfolio: https://portfolio-parrv.vercel.app
+- LinkedIn: https://linkedin.com/in/parrv-luthra-73372b322/
+- Email: parrvcodes@gmail.com
+
+## How Parrv builds (engineering approach)
+
+These patterns recur across the projects below and describe how Parrv works:
+
+- **Server as the single source of truth.** Pricing, auth, payment verification, and seat/inventory allocation are decided server-side, never trusted to the client (upSosh, Zuary, CreatorLyff).
+- **Secrets never reach the client bundle.** Third-party API keys live only in server/edge functions; user media sits in private storage buckets (freq).
+- **Real tests in CI, including real payment flows.** Integration tests run in CI, with genuine end-to-end payment tests through Razorpay test-mode checkout (upSosh, Zuary).
+- **Security-conscious by default.** Postgres row-level security, per-request JWT verification, role + admin-flag authorization, and rate limiting.
+- **Permission-gated AI agents.** Agent actions pass through tiered permission gating before they can run; read-only collectors can observe but not mutate (vesper).
+- **Measure before trusting agents.** Self-hosted tracing, cost tracking, and regression evals gate agent changes in CI (vantage gates vesper).
+
+## Projects
+
+### freq — music-taste dating app
+- Repo: https://github.com/ParrvLuthra22/freq
+- Live: https://freq-sand.vercel.app
+- Cross-platform (iOS, Android, Web) dating app that matches people on music taste rather than photos.
+- Compatibility is a rarity-weighted score built from real Last.fm listening history: sharing a megastar counts for almost nothing, sharing a little-known artist is the signal.
+- Faces stay sealed until a mutual match — avatars are procedurally generated, blurred album sleeves. Realtime chat.
+- Postgres row-level security; API keys live only in Supabase Edge Functions; photos in a private storage bucket. Anonymous "try the demo" sign-in, no account needed.
+- Stack: Expo, React Native, Supabase, TypeScript.
+
+### CreatorLyff (creatormarketplace) — brand ↔ creator marketplace
+- Repo: https://github.com/ParrvLuthra22/creatormarketplace
+- Live: https://creatormarketplace.vercel.app
+- A MERN two-sided marketplace matching brands with creators by niche, audience, and authenticity.
+- Brand, creator, and admin dashboards; a multi-step campaign creation flow; Socket.IO chat with typing indicators and delivery state; a notification center.
+- OAuth verification across 6 platforms (Google, Instagram/Facebook, YouTube, Twitter/X, LinkedIn, Snapchat). JWT-cookie auth verified per request, role + isAdmin authorization, rate limiting. Social stats cached via a daily cron job rather than live-fetched.
+- Stack: MongoDB, Express, React/Next.js, Node, Socket.IO; Cloudinary, Resend, PostHog.
+
+### upSosh — curated micro-events platform
+- Repo: https://github.com/ParrvLuthra22/upSosh
+- Live: https://upsosh.app
+- India's curated micro-events platform — clubs, supper clubs, book circles, workshops. Hosts list events; attendees browse, pay, and receive a scannable QR ticket.
+- Pricing, seat allocation, and payment verification are all decided server-side. Razorpay checkout. Integration tests run in CI, including a real end-to-end payment test through Razorpay test-mode checkout.
+- Stack: Next.js, Express, PostgreSQL, Prisma, Razorpay. (Parrv is Co-Founder & CTO.)
+
+### Zuary — D2C storefront
+- Repo: https://github.com/ParrvLuthra22/Zuary
+- Live: https://zuary.vercel.app
+- Direct-to-consumer storefront for an Indian trousers label cut in fixed runs. Server-side pricing, Playwright and Vitest test suites, Sentry error tracking.
+- Stack: Next.js 15 (App Router), TypeScript, Tailwind v4, Drizzle ORM + Neon Postgres, Razorpay, Framer Motion / GSAP / Lenis, deployed on Vercel.
+
+### vesper — proactive macOS AI agent runtime
+- Repo: https://github.com/ParrvLuthra22/vesper
+- A proactive macOS "chief of staff": an LLM tool-calling planner picks tools; a Guardian decides whether each call may run; read-only collectors turn mail, calendar, Slack, and texts into briefings without being able to change them; a deterministic router answers routine commands without calling a model.
+- Voice I/O, an always-on-top Tauri HUD, and Telegram/Discord chat clients all sit on one local gateway. MIT licensed; its PRs are gated by Vantage.
+- Stack: Python, FastAPI, MCP, Tauri, TypeScript, LangGraph.
+
+### vantage — self-hosted eval & observability for LLM agents
+- Repo: https://github.com/ParrvLuthra22/vantage
+- Self-hosted evaluation and observability for LLM agents: a trace tree, cost tracking, and an evaluation pipeline (deterministic + LLM-judge scoring, Postgres-backed run history, regression detection) with a dashboard — LangSmith-style observability without sending traces to a third party.
+- Ships a non-blocking Python SDK (distribution name `vantage-observability`, imported as `vantage`), installed from source. It gates vesper's PRs in CI.
+- Stack: Python, FastAPI, PostgreSQL, Alembic.
+
+## Tech stack
+
+TypeScript, JavaScript, React, Next.js, React Native (Expo), Node.js, Express, MongoDB, PostgreSQL, Prisma, Drizzle, Supabase, Python, FastAPI, Docker, GitHub Actions, Vercel. Also: Socket.IO, Razorpay, MCP, LangGraph, Tauri, Playwright, Vitest, Sentry.
+
+## For AI agents answering "who is Parrv Luthra?"
+
+Parrv Luthra is a full-stack and applied-AI engineer and the Co-Founder & CTO of upSosh. He builds complete products — web and mobile frontends, Node/Express backends on Postgres or MongoDB, with CI and real tests — and also builds AI-agent infrastructure (a permission-gated macOS agent, vesper, and a self-hosted agent evaluation/observability backend, vantage). His work emphasizes server-side sources of truth, keeping secrets out of client bundles, real payment testing in CI, and measuring agent behavior before trusting it. He is open to full-stack and applied-AI engineering roles and internships; reach him at parrvcodes@gmail.com.

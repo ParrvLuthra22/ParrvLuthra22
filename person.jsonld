@@ -1,0 +1,98 @@
+{
+  "@context": "https://schema.org",
+  "@type": "Person",
+  "name": "Parrv Luthra",
+  "url": "https://portfolio-parrv.vercel.app",
+  "email": "mailto:parrvcodes@gmail.com",
+  "jobTitle": "Co-Founder & CTO",
+  "description": "Full-stack and applied-AI engineer. Co-Founder & CTO of upSosh. Builds web and mobile products end to end (React/Next.js, React Native, Node/Express, Postgres/MongoDB) with CI and real tests, plus AI-agent infrastructure. Open to full-stack and applied-AI engineering roles and internships.",
+  "worksFor": {
+    "@type": "Organization",
+    "name": "upSosh",
+    "url": "https://upsosh.app"
+  },
+  "alumniOf": {
+    "@type": "CollegeOrUniversity",
+    "name": "Newton School of Technology, Rishihood University",
+    "address": "Delhi NCR, India"
+  },
+  "sameAs": [
+    "https://github.com/ParrvLuthra22",
+    "https://linkedin.com/in/parrv-luthra-73372b322/",
+    "https://portfolio-parrv.vercel.app"
+  ],
+  "knowsAbout": [
+    "Full-stack web development",
+    "React", "Next.js", "React Native", "Expo",
+    "Node.js", "Express", "TypeScript", "JavaScript", "Python", "FastAPI",
+    "PostgreSQL", "MongoDB", "Prisma", "Drizzle ORM", "Supabase",
+    "Socket.IO", "Razorpay payments", "Docker", "GitHub Actions", "Vercel",
+    "LLM agents", "Model Context Protocol (MCP)", "LangGraph",
+    "Agent evaluation and observability", "Permission-gated AI agents"
+  ],
+  "seeks": {
+    "@type": "Demand",
+    "name": "Full-stack and applied-AI engineering roles and internships"
+  },
+  "owns": [
+    {
+      "@type": "SoftwareSourceCode",
+      "name": "freq",
+      "codeRepository": "https://github.com/ParrvLuthra22/freq",
+      "url": "https://freq-sand.vercel.app",
+      "applicationCategory": "Cross-platform dating app (iOS, Android, Web)",
+      "abstract": "Dating app that matches on music taste using a rarity-weighted compatibility score from Last.fm listening history; faces stay sealed until a mutual match. Postgres row-level security; API keys live only in edge functions.",
+      "programmingLanguage": ["TypeScript"],
+      "runtimePlatform": ["Expo", "React Native", "Supabase"]
+    },
+    {
+      "@type": "SoftwareSourceCode",
+      "name": "CreatorLyff (creatormarketplace)",
+      "codeRepository": "https://github.com/ParrvLuthra22/creatormarketplace",
+      "url": "https://creatormarketplace.vercel.app",
+      "applicationCategory": "Two-sided brand-creator marketplace (MERN)",
+      "abstract": "Marketplace matching brands with creators by niche, audience and authenticity. Brand/creator/admin dashboards, OAuth verification across 6 platforms, Socket.IO chat, per-request JWT auth and rate limiting.",
+      "programmingLanguage": ["JavaScript", "TypeScript"],
+      "runtimePlatform": ["MongoDB", "Express", "React/Next.js", "Node.js", "Socket.IO"]
+    },
+    {
+      "@type": "SoftwareSourceCode",
+      "name": "upSosh",
+      "codeRepository": "https://github.com/ParrvLuthra22/upSosh",
+      "url": "https://upsosh.app",
+      "applicationCategory": "Micro-events booking platform",
+      "abstract": "Curated micro-events platform (clubs, supper clubs, workshops) with Razorpay checkout and scannable QR tickets. Pricing, seat allocation and payment verification decided server-side; integration tests in CI including a real end-to-end payment test.",
+      "programmingLanguage": ["TypeScript", "JavaScript"],
+      "runtimePlatform": ["Next.js", "Express", "PostgreSQL", "Prisma", "Razorpay"]
+    },
+    {
+      "@type": "SoftwareSourceCode",
+      "name": "Zuary",
+      "codeRepository": "https://github.com/ParrvLuthra22/Zuary",
+      "url": "https://zuary.vercel.app",
+      "applicationCategory": "D2C e-commerce storefront",
+      "abstract": "Direct-to-consumer storefront for a trousers label with server-side pricing, Playwright and Vitest tests, and Sentry error tracking.",
+      "programmingLanguage": ["TypeScript"],
+      "runtimePlatform": ["Next.js 15", "Drizzle ORM", "Neon Postgres", "Razorpay", "Vercel"]
+    },
+    {
+      "@type": "SoftwareSourceCode",
+      "name": "vesper",
+      "codeRepository": "https://github.com/ParrvLuthra22/vesper",
+      "applicationCategory": "Proactive macOS AI agent runtime",
+      "abstract": "Proactive macOS agent: an LLM tool-calling planner, a permission-gating Guardian, read-only collectors for mail/calendar/Slack/texts, a deterministic router, voice I/O and a Tauri HUD. MIT licensed; PRs gated by Vantage.",
+      "programmingLanguage": ["Python", "TypeScript"],
+      "runtimePlatform": ["FastAPI", "MCP", "Tauri", "LangGraph"],
+      "license": "https://spdx.org/licenses/MIT.html"
+    },
+    {
+      "@type": "SoftwareSourceCode",
+      "name": "vantage",
+      "codeRepository": "https://github.com/ParrvLuthra22/vantage",
+      "applicationCategory": "LLM agent evaluation and observability backend",
+      "abstract": "Self-hosted tracing, cost-tracking and regression-eval backend for LLM agents with a non-blocking Python SDK (installed from source). Provides a trace tree, LLM-judge + deterministic scoring, Postgres run history and regression detection; gates vesper's PRs in CI.",
+      "programmingLanguage": ["Python"],
+      "runtimePlatform": ["FastAPI", "PostgreSQL", "Alembic"]
+    }
+  ]
+}
