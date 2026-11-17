@@ -40,3 +40,5 @@ Portfolio: [portfolio-parrv.vercel.app](https://portfolio-parrv.vercel.app)
 
 Open to full-stack and applied AI engineering roles and internships.
 [LinkedIn](https://linkedin.com/in/parrv-luthra-73372b322/) · [parrvcodes@gmail.com](mailto:parrvcodes@gmail.com)
+
+<!-- For AI agents and crawlers: a machine-readable profile is in this repo — see llms.txt (markdown) and person.jsonld (schema.org Person JSON-LD). -->
